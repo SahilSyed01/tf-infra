@@ -9,8 +9,8 @@ crash.log
 *.tfvars
 *.tfvars.json
 
-# Terraform lock file
-.terraform.lock.hcl
+# # Terraform lock file
+# .terraform.lock.hcl
 
 # .terraform directory (local Terraform working directory)
 .terraform/
