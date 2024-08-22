@@ -29,13 +29,13 @@ jobs:
           name: Terraform Plan
           command: terraform plan -out=tfplan
 
-  # terraform_apply:
-  #   executor: terraform-executor
-  #   steps:
-  #     - checkout
-  #     - run:
-  #         name: Apply Terraform Plan
-  #         command: terraform apply -auto-approve tfplan
+  terraform_apply:
+    executor: terraform-executor
+    steps:
+      - checkout
+      - run:
+          name: Apply Terraform Plan
+          command: terraform apply -auto-approve tfplan
 
 workflows:
   version: 2
