@@ -2,13 +2,13 @@ provider "aws" {
   region = "us-east-1"
 }
 
-terraform {
-  backend "s3" {
-    bucket = "infra-tf-state-01"
-    key    = "infra-tf/terraform.tfstate"
-    region = "us-east-1"
-  }
-}
+# terraform {
+#   backend "s3" {
+#     bucket = "infra-tf-state-01"
+#     key    = "infra-tf/terraform.tfstate"
+#     region = "us-east-1"
+#   }
+# }
 
 # Variable for AWS Resource Name Prefix
 variable "aws_resource_name_prefix" {
