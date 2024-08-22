@@ -18,8 +18,8 @@ jobs:
             python3 -m ensurepip
             pip3 install awscli
       - run:
-          name: Terraform Init with Reconfigure
-          command: terraform init -reconfigure
+          name: Terraform Init
+          command: terraform init
 
   terraform_plan:
     executor: terraform-executor
